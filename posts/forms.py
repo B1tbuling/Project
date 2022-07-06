@@ -12,7 +12,6 @@ class TagForm(forms.ModelForm):
             'slug': forms.TextInput(attrs={'class': 'form-control'})
         }
 
-
     def clean_slug(self):
         new_slug = self.cleaned_data['slug'].lower()
 

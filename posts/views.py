@@ -29,10 +29,12 @@ class PostUpdate(ObjectUpdateMixin, View):
     model_form = PostForm
     template = 'blog/post_update_form.html'
 
+
 class PostDelete(ObjectDeleteMixin, View):
     model = Post
     template = 'blog/post_delete_form.html'
     redirect_url = 'posts_list_url'
+
 
 class TagDetail(ObjectDetailMixin, View):
     model = Tag
@@ -54,17 +56,3 @@ class TagUpdate(ObjectUpdateMixin, View):
     model = Tag
     model_form = TagForm
     template = 'blog/tag_update_form.html'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
